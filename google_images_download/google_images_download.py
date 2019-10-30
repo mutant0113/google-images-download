@@ -631,7 +631,7 @@ class googleimagesdownload:
                 if no_numbering:
                     path = main_directory + "/" + dir_name + "/" + prefix + image_name
                 else:
-                    path = main_directory + "/" + dir_name + "/" + prefix + str(count) + "." + image_name
+                    path = main_directory + "/" + dir_name + "/" + str(count) + "." + image_name[-4:]
 
                 try:
                     output_file = open(path, 'wb')
